@@ -1,0 +1,284 @@
+2017-02-19 14:16:23
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.92-b14 mixed mode):
+
+"RMI TCP Connection(2)-192.168.1.3" #26 daemon prio=5 os_prio=0 tid=0x0000000018d0c000 nid=0x10d8 runnable [0x000000001b68d000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	- locked <0x00000000d70903e8> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$1/1735886483.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- <0x00000000d6a13240> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"JMX server connection timeout 25" #25 daemon prio=5 os_prio=0 tid=0x0000000018d11800 nid=0x3310 in Object.wait() [0x000000001ab8f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000d6cdefe8> (a [I)
+	at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(Unknown Source)
+	- locked <0x00000000d6cdefe8> (a [I)
+	at java.lang.Thread.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" #24 daemon prio=5 os_prio=0 tid=0x0000000018d0f000 nid=0x2a60 waiting on condition [0x000000001aa8e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000d6982b60> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-192.168.1.3" #23 daemon prio=5 os_prio=0 tid=0x0000000018d0b800 nid=0x21fc runnable [0x000000001a18e000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	- locked <0x00000000d6ca6ce8> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$1/1735886483.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- <0x00000000d6a10468> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"RMI TCP Accept-0" #22 daemon prio=5 os_prio=0 tid=0x0000000018cd3000 nid=0x2ca8 runnable [0x0000000019f8e000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	- locked <0x00000000d69852c8> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" #20 prio=5 os_prio=0 tid=0x00000000024d0800 nid=0x2f98 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-9" #19 prio=5 os_prio=0 tid=0x0000000018b32000 nid=0x10b8 waiting for monitor entry [0x0000000019a3f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-8" #18 prio=5 os_prio=0 tid=0x0000000018b31800 nid=0x2818 waiting for monitor entry [0x000000001993f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba20> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-7" #17 prio=5 os_prio=0 tid=0x0000000018b2c800 nid=0x33ec waiting for monitor entry [0x000000001983f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-6" #16 prio=5 os_prio=0 tid=0x0000000018b2c000 nid=0x2fe8 waiting for monitor entry [0x000000001973f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba20> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-5" #15 prio=5 os_prio=0 tid=0x0000000018b28800 nid=0x1d88 waiting for monitor entry [0x000000001963f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:24)
+	- waiting to lock <0x00000000d5f7ba20> (a java.lang.String)
+	- locked <0x00000000d5f7ba60> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-4" #14 prio=5 os_prio=0 tid=0x0000000018b28000 nid=0x2abc waiting for monitor entry [0x000000001953f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba20> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-3" #13 prio=5 os_prio=0 tid=0x0000000018b26000 nid=0x17a4 waiting for monitor entry [0x000000001943f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-2" #12 prio=5 os_prio=0 tid=0x0000000018b25800 nid=0x1100 waiting for monitor entry [0x000000001933f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba20> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-1" #11 prio=5 os_prio=0 tid=0x0000000018b23800 nid=0x1ca8 waiting for monitor entry [0x000000001923f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-0" #10 prio=5 os_prio=0 tid=0x0000000018b21000 nid=0x236c waiting for monitor entry [0x000000001913f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.grouk.Main.run(Main.java:24)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+	- locked <0x00000000d5f7ba20> (a java.lang.String)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=0 tid=0x0000000018a78800 nid=0x30bc runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread2" #8 daemon prio=9 os_prio=2 tid=0x0000000017104000 nid=0x25a8 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=2 tid=0x0000000017103800 nid=0x297c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=2 tid=0x00000000170fe000 nid=0xd50 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" #5 daemon prio=5 os_prio=2 tid=0x00000000170fc000 nid=0x2ba4 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=2 tid=0x00000000170fa800 nid=0x18c4 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=1 tid=0x00000000170ea000 nid=0xfd8 in Object.wait() [0x000000001844e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000d5f08ee0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	- locked <0x00000000d5f08ee0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x00000000025bf000 nid=0x2968 in Object.wait() [0x000000001834e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000d5f06b50> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	- locked <0x00000000d5f06b50> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=2 tid=0x00000000170c7800 nid=0xa60 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x00000000024e6800 nid=0x2868 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x00000000024e8000 nid=0x1dd4 runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=0 tid=0x00000000024e9800 nid=0x1f1c runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=0 tid=0x00000000024ec000 nid=0x2a20 runnable 
+
+"VM Periodic Task Thread" os_prio=2 tid=0x0000000018ab7000 nid=0x1c4 waiting on condition 
+
+JNI global references: 343
+
+
+Found one Java-level deadlock:
+=============================
+"Thread-9":
+  waiting to lock monitor 0x0000000018b33ec8 (object 0x00000000d5f7ba60, a java.lang.String),
+  which is held by "Thread-5"
+"Thread-5":
+  waiting to lock monitor 0x00000000025c6b68 (object 0x00000000d5f7ba20, a java.lang.String),
+  which is held by "Thread-0"
+"Thread-0":
+  waiting to lock monitor 0x0000000018b33ec8 (object 0x00000000d5f7ba60, a java.lang.String),
+  which is held by "Thread-5"
+
+Java stack information for the threads listed above:
+===================================================
+"Thread-9":
+	at com.grouk.Main.run(Main.java:18)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+"Thread-5":
+	at com.grouk.Main.run(Main.java:24)
+	- waiting to lock <0x00000000d5f7ba20> (a java.lang.String)
+	- locked <0x00000000d5f7ba60> (a java.lang.String)
+"Thread-0":
+	at com.grouk.Main.run(Main.java:24)
+	- waiting to lock <0x00000000d5f7ba60> (a java.lang.String)
+	- locked <0x00000000d5f7ba20> (a java.lang.String)
+
+Found 1 deadlock.
+
